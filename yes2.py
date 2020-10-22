@@ -54,7 +54,7 @@ def drawContours(conts, color_image):
 
 while True:
     #detect green
-    mask, res, conts, color_image, depth_image = detect(lower_green, upper_green)
+    mask, res, conts, color_image, depth_image = detect(l_red, u_red)
 
     xcenter = drawContours(conts, color_image)
 

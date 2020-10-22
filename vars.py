@@ -26,10 +26,13 @@ middleOfRes = xRes/2
 
 #colors
 
-upper_r, lower_r = rgb_hsv_converter((255, 166, 0))
-upper_red = np.array([upper_r[0], upper_r[1], upper_r[2]])
-lower_red = np.array([lower_r[0], lower_r[1], lower_r[2]])
-print(lower_red)
-lower_green = np.array([29, 86, 6])
-upper_green = np.array([64, 255, 255])
+l_red = np.array([150, 102, 0])
+u_red = np.array([179, 204, 200])
 
+l_green = np.array([29, 86, 6])
+u_green = np.array([64, 255, 255])
+
+#l_red = np.array([150, 102, 0])
+#u_red = np.array([179, 204, 200])
+#l_red = np.array([150, 102, 0])
+#u_red = np.array([179, 204, 200])

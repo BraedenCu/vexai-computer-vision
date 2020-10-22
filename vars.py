@@ -1,0 +1,35 @@
+import numpy as np 
+import colorsys
+
+def rgb_hsv_converter(rgb):
+    (r, g, b) = rgb_normalizer(rgb)
+    hsv = colorsys.rgb_to_hsv(r,g,b)
+    (h,s,v) = hsv_normalizer(hsv)
+    upper_bound = [h+10, s+10, v+10]
+    lower_bound = [h-10, s-40, v-40]
+    return upper_bound, lower_bound
+def rgb_normalizer(rgb):
+    (r,g,b) = rgb
+    return (r/255, g/255, b/255)
+def hsv_normalizer(hsv):
+    (h,s,v) = hsv
+    return (h*360, s*255, v*255)
+
+
+#default vars
+error = False
+AngleValue = 0
+RotationValue = 0
+xOffset = 0
+xRes = 1920
+middleOfRes = xRes/2
+
+#colors
+
+upper_r, lower_r = rgb_hsv_converter((255, 166, 0))
+upper_red = np.array([upper_r[0], upper_r[1], upper_r[2]])
+lower_red = np.array([lower_r[0], lower_r[1], lower_r[2]])
+print(lower_red)
+lower_green = np.array([29, 86, 6])
+upper_green = np.array([64, 255, 255])
+

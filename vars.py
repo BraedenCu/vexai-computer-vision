@@ -32,7 +32,3 @@ u_red = np.array([179, 204, 200])
 l_green = np.array([29, 86, 6])
 u_green = np.array([64, 255, 255])
 
-#l_red = np.array([150, 102, 0])
-#u_red = np.array([179, 204, 200])
-#l_red = np.array([150, 102, 0])
-#u_red = np.array([179, 204, 200])
